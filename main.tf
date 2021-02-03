@@ -8,14 +8,6 @@ terraform {
     }
 }
 
-terraform {
-  required_providers {
-    aci = {
-      source = "CiscoDevNet/aci"
-      version = "0.5.1"
-    }
-  }
-}
 provider "aci" {
   # cisco-aci user name
   username = var.syddmz01_apic_username
