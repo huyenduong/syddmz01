@@ -6,6 +6,12 @@ terraform {
         name = "huyeduon-syddmz01"
       }
     }
+    required_providers {
+    aci = {
+      source = "CiscoDevNet/aci"
+      version = "0.5.4"
+    }
+  }
 }
 
 provider "aci" {
